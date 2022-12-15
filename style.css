@@ -339,6 +339,22 @@ border-radius: 10px;
 margin-right: 30px;
 }
 
+.input_second {
+    padding: 20px;
+gap: 10px;
+
+width: 500px;
+height: 28px;
+
+/* Beige 100 */
+
+background: #F9F7F4;
+/* Beige 200 */
+
+border: 1px solid #F4F0E9;
+border-radius: 10px;
+}
+
 .input_row {
     margin-bottom: 33px;
     
@@ -381,4 +397,31 @@ vertical-align: middle;
 
 }
 
+::placeholder {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 142%;
+/* or 28px */
 
+
+/* Gray 300 */
+
+color: #A6A6A6;
+}
+
+.contract_check {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 142%;
+/* or 24px */
+
+letter-spacing: -0.01em;
+
+/* Gray 300 */
+
+color: #A6A6A6;
+}
