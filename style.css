@@ -425,3 +425,56 @@ letter-spacing: -0.01em;
 
 color: #A6A6A6;
 }
+
+.input_button_search {
+    padding: 15px 30px;
+gap: 10px;
+
+width: 235px;
+height: 58px;
+
+/* Green 400 */
+
+background: #286562;
+border-radius: 10px;
+border: 0px;
+float: left;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 142%;
+/* or 28px */
+
+
+/* White */
+
+color: #FFFFFF;
+}
+
+.input_button_cancel {
+    padding: 15px 30px;
+gap: 10px;
+
+width: 235px;
+height: 58px;
+
+/* Green 400 */
+background: #E0F0E5;
+border-radius: 10px;
+border: 0px;
+float: left;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 142%;
+/* or 28px */
+
+
+/* Green 400 */
+
+color: #286562;
+}
