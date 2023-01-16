@@ -1,0 +1,866 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    
+    background-color: #F9F7F4;
+}
+
+.header_img {
+    display: flex;
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.header_img_fixed {
+visibility: hidden;
+}
+
+.header_img_низ {
+    display: flex;
+    width: 100%;
+    
+    /*height: 100%;*/
+}
+
+.header_container {
+    position: relative; display: flex; justify-content: center; z-index: 1;
+}
+
+.header {
+    height: 100%;
+    max-width: 1170px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header_fixed2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 88px;
+    
+    background: rgba(243, 239, 232, 0.6);
+    backdrop-filter: blur(27px);
+
+    animation: showElement;
+    animation-duration: 1s;
+}
+
+.header_fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*padding: 10px 0;*/
+    animation: showElement;
+    animation-duration: 1s;
+}
+
+@keyframes showElement{
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.logo_black {
+position: absolute;
+visibility: hidden;
+}
+
+.logo_fixed {
+    visibility: hidden;
+}
+
+.logo_black_fixed {
+    visibility: visible;
+}
+
+.header_nav {
+    display: flex;
+flex-direction: row;
+justify-content:left;
+align-items: center;
+padding: 0px;
+gap: 50px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 142%;
+/* or 28px */
+
+
+/* White */
+
+color: #FFFFFF;
+}
+
+.header_nav_item:hover {
+    border-bottom: 1px solid #FFFFFF;
+line-height: 142%;
+}
+
+.header_nav_item2:hover {
+    border-bottom: 1px solid #1B1F2B;
+line-height: 142%;
+}
+
+
+.header_nav_item_fixed {
+    /*text-decoration: underline;*/
+    color: #1B1F2B;
+}
+
+.black_black {
+    color: #1B1F2B;
+}
+
+.header_number {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 142%;
+color: #FFFFFF;
+}
+
+.header_number_fixed {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 142%;
+color: #1B1F2B;
+}
+
+.welcome_container {
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+}
+
+.purrfect_adventures {
+    
+    max-width: 100%;
+    
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 96px;
+line-height: 109%;
+/* or 105px */
+
+text-align: center;
+letter-spacing: 0.02em;
+
+/* White */
+
+color: #FFFFFF;
+}
+
+.welcome_container_низ {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+    height: 100%;
+    max-width: 1170px;
+    justify-content: space-around;
+    margin-top: 4%;
+    max-height: 80%;
+}
+
+.purrfect_adventures_under {
+    width: 562px;
+    align-self: center;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 142%;
+/* or 28px */
+
+text-align: center;
+
+/* White */
+
+color: #FFFFFF;
+}
+
+.button1 {
+    background: #FFFFFF;
+border-radius: 10px;
+border-width: 0px;
+/*padding: 5px 20px;*/
+width: 6.1vmax;  height: 1.7vmax;
+}
+
+.button1_text {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+font-size: 0.9vmax;
+line-height: 142%;
+/* or 24px */
+
+letter-spacing: -0.01em;
+
+/* Black */
+
+color: #1B1F2B;
+}
+
+.Выбери_свой_тур {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 59px;
+line-height: 124%;
+/* or 73px */
+
+text-align: center;
+
+/* Black */
+
+color: #1B1F2B;
+margin-top: 135px;
+}
+
+.Выбери_свой_тур-under {
+    margin-top: 35px;
+    display: flex;
+padding: 0px;
+gap: 30px;
+text-align: center;
+align-items: center;
+align-self: center;
+justify-content: center;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 122%;
+/* identical to box height, or 28px */
+
+
+/* Black */
+
+color: #1B1F2B;
+}
+
+.card_container {
+    
+    margin-top: 100px;
+    flex-direction: row;
+    /*display: flexbox;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;*/
+    
+    gap: 30px;
+    /*width: 70%;*/
+/*width: 1170px;*/
+align-self: center;
+max-width: 1170px;
+}
+
+.card_img {
+    
+    width: 370px;
+height: 531px;
+
+border-radius: 50px;
+}
+
+.card_text-container-top {
+    top: 50px;
+    left: 50px;
+    
+position: absolute;
+gap: 16px;
+}
+
+.card_text_top-top {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 35px;
+line-height: 122%;
+/* or 43px */
+
+
+/* White */
+
+color: #FFFFFF;
+}
+
+.card_text_top-bottom {
+    margin-top: 16px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 142%;
+/* or 24px */
+
+letter-spacing: -0.01em;
+
+/* White */
+
+color: #FFFFFF;
+
+}
+
+.card_text-container-bottom {
+    left: 50px;
+    bottom: 50px;
+    
+position: absolute;
+gap: 16px;
+}
+
+.card_text_bottom {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 122%;
+/* identical to box height, or 28px */
+
+
+/* White */
+
+color: #FFFFFF;
+
+}
+
+.vector {
+    display: inline;
+    margin-left: 15px;
+}
+
+.Собери_свой_тур_контейнер {
+    display:flex; flex-direction: column;  align-self: center;
+}
+
+.Собери_свой_тур {
+    margin-top: 135px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 59px;
+line-height: 124%;
+/* or 73px */
+
+text-align: center;
+
+/* Black */
+
+color: #1B1F2B;
+}
+
+.Собери_свой_тур_under {
+    margin-top: 30px;
+    display: flex;
+    max-width: 400px;
+    align-self: center;
+    
+/* p-normal */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 142%;
+/* or 28px */
+
+text-align: center;
+
+/* Gray 300 */
+
+color: #A6A6A6;
+text-align: center;
+align-items: center;
+align-self: center;
+justify-content: center;
+
+}
+
+.inputs_container {
+    margin-top: 100px;
+
+    display:flex;
+    flex-direction: row;  
+    align-self: center; 
+    max-width: 1170px; 
+    flex-wrap: wrap; 
+    background-color: #FFFFFF; 
+
+    padding: 0px; 
+    padding-top: 70px;
+    padding-bottom: 70px;
+    /*padding-inline: 70px;*/
+
+    border-radius: 50px;
+    row-gap: 33px;
+    column-gap: 30px; 
+    justify-content: center;
+    /*justify-content: flex-start;*/
+}
+
+.input {
+    margin-top: 8px;
+    display: flex;
+    padding: 20px;
+gap: 10px;
+
+width: 458px;
+height: 28px;
+
+background: #F9F7F4;
+/* Beige 200 */
+
+border: 1px solid #F4F0E9;
+border-radius: 10px;
+}
+
+.input_label {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 142%;
+
+color: #1B1F2B;
+}
+
+::placeholder {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 142%;
+
+color: #A6A6A6;
+}
+
+textarea {
+resize: none;
+}
+
+.comment_input {
+    padding: 20px;
+gap: 10px;
+
+width: 988px;
+height: 152px;
+
+/* Beige 100 */
+
+background: #F9F7F4;
+/* Beige 200 */
+
+border: 1px solid #F4F0E9;
+border-radius: 10px;
+
+}
+
+.age-check_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    
+    /* or 28px */
+    
+    
+    /* Black */
+    
+    color: #1B1F2B;
+    vertical-align: middle;
+    
+    }
+
+    .contract_check {
+        margin-left: 19px;
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    vertical-align: middle;
+    /* or 24px */
+    
+    letter-spacing: -0.01em;
+    
+    /* Gray 300 */
+    
+    color: #A6A6A6;
+    }
+    
+    .Найти_тур {
+     padding: 15px 30px;
+     gap: 10px;
+
+     width: 235px;
+     height: 58px;
+
+     background: #286562;
+     border-radius: 10px;
+     border-width: 0;
+
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 142%;
+
+     color: #FFFFFF;
+    }
+
+    .Отмена {
+     padding: 15px 30px;
+     gap: 10px;
+        
+     width: 235px;
+     height: 58px;
+
+     background: #E0F0E5;
+     border-radius: 10px;
+     border-width: 0;
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 142%;
+
+     color: #286562;
+
+    }
+
+    .picture_board {
+        display: flex;
+        justify-content: center;
+    }
+
+    .travel_photo-first-third_row {
+     width: 442.5px;
+     height: 300px;
+
+     border-radius: 50px;
+    }
+
+    .travel_photo-second_row {
+     width: 349.16px;
+     height: 300px;
+   
+     border-radius: 50px;
+     }
+
+     .Отзывы {
+     max-width: 490px;
+
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 23px;
+     line-height: 122%;
+
+     color: #1B1F2B;
+
+     }
+
+     .review_name {
+        /*width: 415px;*/
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 122%;
+
+        color: #1B1F2B;
+     }
+
+     .review_tour {
+        /*width: 415px;*/
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 142%;
+        /* or 24px */
+
+        letter-spacing: -0.01em;
+
+        /* Gray 300 */
+
+        color: #A6A6A6;
+     }
+
+     .review_img {
+     width: 75px;
+     height: 75px;
+
+     border-radius: 100px;
+     }
+
+@media screen and (max-width: 1024px) {
+
+    .header_img {
+        align-self: center;
+        display: flex;
+        width: 100%;
+        
+        /*width:1024px;*/
+        /*height: 743px;*/
+        
+        /*object-fit:cover;*/
+        
+    }
+
+    .header_img_низ {
+        display: flex;
+        width: 100%;
+        
+        /*height: 100%;*/
+    }
+
+    .welcome_container_низ {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-items: center;
+        text-align: center;
+        height: 100%;
+        max-width: 914px;
+        justify-content: space-around;
+        margin-top: 4%;
+        max-height: 80%;
+    }
+
+    .purrfect_adventures {
+        
+      font-size: 3rem;
+      max-width: 100%;
+      word-break:keep-all;
+      text-align: center;
+
+      font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 96px;
+line-height: 109%;
+/* or 105px */
+
+text-align: center;
+letter-spacing: 0.02em;
+
+/* White */
+
+color: #FFFFFF;
+
+    }
+    .purrfect_adventures_under {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 142%;
+/* or 28px */
+
+text-align: center;
+
+    }
+    .header_nav {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 142%;
+        /* or 28px */
+        gap: 30px;
+        
+        
+        /* White */
+        
+        color: #FFFFFF;
+/* or 28px */
+
+
+/* White */
+
+    color: #FFFFFF;
+
+    /*font-size: 0.5rem;*/
+    }
+    .header_number {
+        font-size: 0.5rem;
+    }
+    .logo {
+        height: 27px;
+    }
+
+    .button1 {
+        width: 11.5vmax;  height: 3.2vmax;
+        /*padding: 5px 20px;*/
+/* White */
+
+background: #FFFFFF;
+border-radius: 10px;
+    }
+
+    .button1_text {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 1.7vmax;
+line-height: 142%;
+/* or 24px */
+
+letter-spacing: -0.01em;
+
+/* Black */
+
+color: #1B1F2B;
+    }
+
+    .header_number {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 142%;
+/* or 28px */
+
+
+/* White */
+
+color: #FFFFFF;
+    }
+
+    .header {
+        height: 100%;
+        max-width: 1170px;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        margin-left: 57px;
+        margin-right: 57px;
+    }
+
+    textarea {
+        max-width: 798px;
+        }
+
+  }
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 540px) {
+
+
+    .purrfect_adventures {
+    
+        max-width: 100%;
+        
+        /*max-width: 310px;*/
+        
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 109%;
+    /* or 105px */
+    
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    /* White */
+    
+    color: #FFFFFF;
+    }
+
+    .purrfect_adventures_under {
+        font-size: 16px;
+        width: 250px;
+    }
+
+    .header_nav_item{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .header_number {
+        font-size: 16px;
+    }
+    .logo {
+        width: 133px;
+height: 22px;
+    }
+
+    .button1 {
+        /*width: 32vmax;  height: 9vmax;*/
+        width: 114px; height: 33px;
+        background: #FFFFFF;
+        border-radius: 10px;
+    }
+
+
+    .button1_text {
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+/*font-size: 4.5vmax;*/
+font-size:16px;
+line-height: 142%;
+/* or 24px */
+
+letter-spacing: -0.01em;
+
+/* Black */
+
+color: #1B1F2B;
+    }
+
+    textarea {
+        max-width: 278px;
+        }
+
+  }
+
+  
